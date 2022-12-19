@@ -1,0 +1,56 @@
+
+
+============================== 2022-12-19 15:57:27.218886 | 107e7a9b-762e-423c-b34a-ec99d0be0ecd ==============================
+[0m15:57:27.218896 [info ] [MainThread]: Running with dbt=1.3.1
+[0m15:57:27.219268 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/othmanbouzahzah/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'jaffle-shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:57:27.219410 [debug] [MainThread]: Tracking: tracking
+[0m15:57:27.238332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f7172070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f71721f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f7172190>]}
+[0m15:57:27.240074 [info ] [MainThread]: Creating dbt configuration folder at /Users/othmanbouzahzah/.dbt
+[0m15:57:30.067692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f71582e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f71581c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98f7158400>]}
+[0m15:57:30.068231 [debug] [MainThread]: Flushing usage events
+[0m15:57:30.615538 [error] [MainThread]: Encountered an error:
+
+[0m15:57:30.616896 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/dbt/main.py", line 135, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/dbt/main.py", line 198, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/dbt/main.py", line 245, in run_from_args
+    results = task.run()
+  File "/Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/dbt/task/init.py", line 313, in run
+    project_name = self.get_valid_project_name()
+  File "/Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/dbt/task/init.py", line 270, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2022-12-19 15:57:36.674230 | 27af1e0c-7a60-4410-b794-37aa4a7aabf0 ==============================
+[0m15:57:36.674241 [info ] [MainThread]: Running with dbt=1.3.1
+[0m15:57:36.674629 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/othmanbouzahzah/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'jaffle_shop', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:57:36.674781 [debug] [MainThread]: Tracking: tracking
+[0m15:57:36.689255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1e82880a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1e8288220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1e82881c0>]}
+[0m15:57:36.692100 [debug] [MainThread]: Starter project path: /Users/othmanbouzahzah/.local/share/virtualenvs/dbt-Clh2DEFy/lib/python3.9/site-packages/dbt/include/starter_project
+[0m15:57:46.585871 [info ] [MainThread]: Profile jaffle_shop written to /Users/othmanbouzahzah/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:57:46.586208 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:57:46.586516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1e841edf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1e841ecd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff1e841ed60>]}
+[0m15:57:46.586760 [debug] [MainThread]: Flushing usage events
